@@ -119,10 +119,6 @@ function AuthProvider({ children }) {
   }, []);
 
   const login = async (accountName, password) => {
-    // const response = await Axios.post('api/v1/users/login', {
-    //   accountName,
-    //   password
-    // });
     const loginUrl = `api/v1/users/login`
     const response = await Axios.post(loginUrl, {
       accountName,
