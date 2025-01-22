@@ -123,7 +123,7 @@ function AuthProvider({ children }) {
     //   accountName,
     //   password
     // });
-    const loginUrl = `${process.env.BACKEND_BASE_API}/api/v1/users/login`
+    const loginUrl = `api/v1/users/login`
     const response = await Axios.post(loginUrl, {
       accountName,
       password
