@@ -50,8 +50,8 @@ export default function WithdrawForm({ depositAsset, setReloadTrx }) {
       setError('Invalid amount value.');
       return;
     }
-    if (usdAmount < 100) {
-      setError('Min deposit amount is 100 USD.');
+    if (usdAmount < 1) {
+      setError('Min deposit amount is 1 USD.');
       return;
     }
     if (usdAmount > 1000000) {
